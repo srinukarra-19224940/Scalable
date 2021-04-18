@@ -56,7 +56,7 @@
                     $doc = $_POST['docname'];
                     $appdate = $_POST['appdate'];
                     $apptime = date('H:i:s', strtotime($_POST['apptime']));
-                    $qry = mysqli_query($con, "INSERT INTO doctor_app (Doctor_id,App_date,App_time,Users_id,Report,Status) VALUES ('$doc','$appdate','$apptime','$id','$name','','Accepted')");
+                    $qry = mysqli_query($con, "INSERT INTO doctor_app (Doctor_id,App_date,App_time,Users_id,Report,Status) VALUES (5,'$appdate','$apptime','$id','','Accepted')");
                     if ($qry) {
                         echo '
                         <script>
